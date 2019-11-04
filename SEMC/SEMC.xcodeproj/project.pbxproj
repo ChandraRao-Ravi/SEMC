@@ -7,21 +7,107 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		76EC388B235DD51A00DCA3BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EC388A235DD51A00DCA3BA /* AppDelegate.swift */; };
-		76EC388D235DD51A00DCA3BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EC388C235DD51A00DCA3BA /* ViewController.swift */; };
+		769F76E32370A92700DCDC33 /* GraphCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769F76E22370A92700DCDC33 /* GraphCollectionViewCell.swift */; };
+		76B45B9B236CC47300AA921E /* BadgeHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B45B9A236CC47300AA921E /* BadgeHub.swift */; };
 		76EC3890235DD51A00DCA3BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76EC388E235DD51A00DCA3BA /* Main.storyboard */; };
 		76EC3892235DD51C00DCA3BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76EC3891235DD51C00DCA3BA /* Assets.xcassets */; };
 		76EC3895235DD51C00DCA3BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76EC3893235DD51C00DCA3BA /* LaunchScreen.storyboard */; };
+		76EC38A1235DD5C300DCA3BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EC389D235DD5C200DCA3BA /* AppDelegate.swift */; };
+		76EC38A5235DD6B300DCA3BA /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EC38A4235DD6B300DCA3BA /* DashboardViewController.swift */; };
+		76EC38A8235DD6D200DCA3BA /* OptimizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EC38A7235DD6D200DCA3BA /* OptimizationViewController.swift */; };
+		76EC38AB235DD6E700DCA3BA /* SavingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EC38AA235DD6E700DCA3BA /* SavingsViewController.swift */; };
+		76EC38AE235DD6FA00DCA3BA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EC38AD235DD6FA00DCA3BA /* SettingsViewController.swift */; };
+		76EC38B0235DE0D300DCA3BA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EC38AF235DE0D300DCA3BA /* BaseViewController.swift */; };
+		76EC38B9235DE26C00DCA3BA /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EC38B6235DE26C00DCA3BA /* NavigationBar.swift */; };
+		76EC38BA235DE26C00DCA3BA /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38B7235DE26C00DCA3BA /* NavigationBar.xib */; };
+		76EC38BC235DE2B700DCA3BA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EC38BB235DE2B600DCA3BA /* Constants.swift */; };
+		76EC391B235DEC1800DCA3BA /* SFProText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38DE235DEC1700DCA3BA /* SFProText-Medium.ttf */; };
+		76EC391C235DEC1800DCA3BA /* SFProText-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38DF235DEC1700DCA3BA /* SFProText-Heavy.ttf */; };
+		76EC391D235DEC1800DCA3BA /* SFProDisplay-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38E0235DEC1700DCA3BA /* SFProDisplay-UltraLight.ttf */; };
+		76EC391E235DEC1800DCA3BA /* SFProDisplay-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38E1235DEC1700DCA3BA /* SFProDisplay-RegularItalic.ttf */; };
+		76EC391F235DEC1800DCA3BA /* SFProDisplay-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38E2235DEC1700DCA3BA /* SFProDisplay-SemiboldItalic.ttf */; };
+		76EC3920235DEC1800DCA3BA /* SFProText-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38E3235DEC1700DCA3BA /* SFProText-RegularItalic.ttf */; };
+		76EC3921235DEC1800DCA3BA /* SFProText-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38E4235DEC1700DCA3BA /* SFProText-SemiBold.ttf */; };
+		76EC3922235DEC1800DCA3BA /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38E5235DEC1700DCA3BA /* SFProText-Regular.ttf */; };
+		76EC3923235DEC1800DCA3BA /* SFProDisplay-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38E6235DEC1700DCA3BA /* SFProDisplay-BoldItalic.ttf */; };
+		76EC3924235DEC1800DCA3BA /* SFProDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38E7235DEC1700DCA3BA /* SFProDisplay-Medium.ttf */; };
+		76EC3925235DEC1800DCA3BA /* SFProDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38E8235DEC1700DCA3BA /* SFProDisplay-Black.ttf */; };
+		76EC3926235DEC1800DCA3BA /* SFProText-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38E9235DEC1700DCA3BA /* SFProText-BoldItalic.ttf */; };
+		76EC3927235DEC1800DCA3BA /* SFProText-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38EA235DEC1700DCA3BA /* SFProText-MediumItalic.ttf */; };
+		76EC3928235DEC1800DCA3BA /* SFProText-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38EB235DEC1700DCA3BA /* SFProText-LightItalic.ttf */; };
+		76EC3929235DEC1800DCA3BA /* SFProText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38EC235DEC1700DCA3BA /* SFProText-Light.ttf */; };
+		76EC392A235DEC1800DCA3BA /* SFProDisplay-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38ED235DEC1700DCA3BA /* SFProDisplay-ThinItalic.ttf */; };
+		76EC392B235DEC1800DCA3BA /* SFProText-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38EE235DEC1700DCA3BA /* SFProText-HeavyItalic.ttf */; };
+		76EC392C235DEC1800DCA3BA /* SFProDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38EF235DEC1700DCA3BA /* SFProDisplay-Light.ttf */; };
+		76EC392D235DEC1800DCA3BA /* SFProDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38F0235DEC1700DCA3BA /* SFProDisplay-Regular.ttf */; };
+		76EC392E235DEC1800DCA3BA /* SFProDisplay-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38F1235DEC1700DCA3BA /* SFProDisplay-BlackItalic.ttf */; };
+		76EC392F235DEC1800DCA3BA /* SFProText-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38F2235DEC1700DCA3BA /* SFProText-SemiBoldItalic.ttf */; };
+		76EC3930235DEC1800DCA3BA /* SFProDisplay-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38F3235DEC1700DCA3BA /* SFProDisplay-MediumItalic.ttf */; };
+		76EC3931235DEC1800DCA3BA /* SFProDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38F4235DEC1700DCA3BA /* SFProDisplay-Bold.ttf */; };
+		76EC3932235DEC1800DCA3BA /* SFProText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38F5235DEC1700DCA3BA /* SFProText-Bold.ttf */; };
+		76EC3933235DEC1800DCA3BA /* SFProDisplay-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38F6235DEC1700DCA3BA /* SFProDisplay-HeavyItalic.ttf */; };
+		76EC3934235DEC1800DCA3BA /* SFProDisplay-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38F7235DEC1700DCA3BA /* SFProDisplay-SemiBold.ttf */; };
+		76EC3935235DEC1800DCA3BA /* SFProDisplay-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38F8235DEC1700DCA3BA /* SFProDisplay-Heavy.ttf */; };
+		76EC3936235DEC1800DCA3BA /* SFProDisplay-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38F9235DEC1700DCA3BA /* SFProDisplay-LightItalic.ttf */; };
+		76EC3937235DEC1800DCA3BA /* SFProDisplay-UltralightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38FA235DEC1700DCA3BA /* SFProDisplay-UltralightItalic.ttf */; };
+		76EC3938235DEC1800DCA3BA /* SFProDisplay-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38FB235DEC1700DCA3BA /* SFProDisplay-Thin.ttf */; };
+		76EC3939235DEC1800DCA3BA /* SFPro_Font_License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 76EC38FC235DEC1700DCA3BA /* SFPro_Font_License.rtf */; };
+		76EC393D235DF30F00DCA3BA /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EC393C235DF30F00DCA3BA /* DashboardCollectionViewCell.swift */; };
+		7E42056F24AB756BAD1D2FA3 /* Pods_SEMC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FC4525127ABBC126CBB7F3 /* Pods_SEMC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75AF1D8FBBFE80E1DA8B8A67 /* Pods-SEMC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEMC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SEMC/Pods-SEMC.debug.xcconfig"; sourceTree = "<group>"; };
+		769F76E22370A92700DCDC33 /* GraphCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphCollectionViewCell.swift; sourceTree = "<group>"; };
+		76B45B9A236CC47300AA921E /* BadgeHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeHub.swift; sourceTree = "<group>"; };
 		76EC3887235DD51A00DCA3BA /* SEMC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SEMC.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		76EC388A235DD51A00DCA3BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		76EC388C235DD51A00DCA3BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		76EC388F235DD51A00DCA3BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76EC3891235DD51C00DCA3BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76EC3894235DD51C00DCA3BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76EC3896235DD51C00DCA3BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76EC389D235DD5C200DCA3BA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76EC38A4235DD6B300DCA3BA /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		76EC38A7235DD6D200DCA3BA /* OptimizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimizationViewController.swift; sourceTree = "<group>"; };
+		76EC38AA235DD6E700DCA3BA /* SavingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsViewController.swift; sourceTree = "<group>"; };
+		76EC38AD235DD6FA00DCA3BA /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		76EC38AF235DE0D300DCA3BA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		76EC38B6235DE26C00DCA3BA /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		76EC38B7235DE26C00DCA3BA /* NavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
+		76EC38BB235DE2B600DCA3BA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		76EC38DE235DEC1700DCA3BA /* SFProText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Medium.ttf"; sourceTree = "<group>"; };
+		76EC38DF235DEC1700DCA3BA /* SFProText-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Heavy.ttf"; sourceTree = "<group>"; };
+		76EC38E0235DEC1700DCA3BA /* SFProDisplay-UltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-UltraLight.ttf"; sourceTree = "<group>"; };
+		76EC38E1235DEC1700DCA3BA /* SFProDisplay-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-RegularItalic.ttf"; sourceTree = "<group>"; };
+		76EC38E2235DEC1700DCA3BA /* SFProDisplay-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		76EC38E3235DEC1700DCA3BA /* SFProText-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-RegularItalic.ttf"; sourceTree = "<group>"; };
+		76EC38E4235DEC1700DCA3BA /* SFProText-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-SemiBold.ttf"; sourceTree = "<group>"; };
+		76EC38E5235DEC1700DCA3BA /* SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Regular.ttf"; sourceTree = "<group>"; };
+		76EC38E6235DEC1700DCA3BA /* SFProDisplay-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-BoldItalic.ttf"; sourceTree = "<group>"; };
+		76EC38E7235DEC1700DCA3BA /* SFProDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Medium.ttf"; sourceTree = "<group>"; };
+		76EC38E8235DEC1700DCA3BA /* SFProDisplay-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Black.ttf"; sourceTree = "<group>"; };
+		76EC38E9235DEC1700DCA3BA /* SFProText-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-BoldItalic.ttf"; sourceTree = "<group>"; };
+		76EC38EA235DEC1700DCA3BA /* SFProText-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-MediumItalic.ttf"; sourceTree = "<group>"; };
+		76EC38EB235DEC1700DCA3BA /* SFProText-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-LightItalic.ttf"; sourceTree = "<group>"; };
+		76EC38EC235DEC1700DCA3BA /* SFProText-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Light.ttf"; sourceTree = "<group>"; };
+		76EC38ED235DEC1700DCA3BA /* SFProDisplay-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-ThinItalic.ttf"; sourceTree = "<group>"; };
+		76EC38EE235DEC1700DCA3BA /* SFProText-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		76EC38EF235DEC1700DCA3BA /* SFProDisplay-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Light.ttf"; sourceTree = "<group>"; };
+		76EC38F0235DEC1700DCA3BA /* SFProDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		76EC38F1235DEC1700DCA3BA /* SFProDisplay-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-BlackItalic.ttf"; sourceTree = "<group>"; };
+		76EC38F2235DEC1700DCA3BA /* SFProText-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		76EC38F3235DEC1700DCA3BA /* SFProDisplay-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-MediumItalic.ttf"; sourceTree = "<group>"; };
+		76EC38F4235DEC1700DCA3BA /* SFProDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		76EC38F5235DEC1700DCA3BA /* SFProText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Bold.ttf"; sourceTree = "<group>"; };
+		76EC38F6235DEC1700DCA3BA /* SFProDisplay-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		76EC38F7235DEC1700DCA3BA /* SFProDisplay-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-SemiBold.ttf"; sourceTree = "<group>"; };
+		76EC38F8235DEC1700DCA3BA /* SFProDisplay-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Heavy.ttf"; sourceTree = "<group>"; };
+		76EC38F9235DEC1700DCA3BA /* SFProDisplay-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-LightItalic.ttf"; sourceTree = "<group>"; };
+		76EC38FA235DEC1700DCA3BA /* SFProDisplay-UltralightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-UltralightItalic.ttf"; sourceTree = "<group>"; };
+		76EC38FB235DEC1700DCA3BA /* SFProDisplay-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Thin.ttf"; sourceTree = "<group>"; };
+		76EC38FC235DEC1700DCA3BA /* SFPro_Font_License.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = SFPro_Font_License.rtf; sourceTree = "<group>"; };
+		76EC393C235DF30F00DCA3BA /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
+		96FC4525127ABBC126CBB7F3 /* Pods_SEMC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SEMC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3AB6BF8C515928140D71B30 /* Pods-SEMC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEMC.release.xcconfig"; path = "Pods/Target Support Files/Pods-SEMC/Pods-SEMC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +115,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E42056F24AB756BAD1D2FA3 /* Pods_SEMC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75D1C487FF771D798B7B19BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96FC4525127ABBC126CBB7F3 /* Pods_SEMC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		76EC387E235DD51A00DCA3BA = {
 			isa = PBXGroup;
 			children = (
 				76EC3889235DD51A00DCA3BA /* SEMC */,
 				76EC3888235DD51A00DCA3BA /* Products */,
+				BDB351F5EA5BE60A124F87C0 /* Pods */,
+				75D1C487FF771D798B7B19BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +151,168 @@
 		76EC3889235DD51A00DCA3BA /* SEMC */ = {
 			isa = PBXGroup;
 			children = (
-				76EC388A235DD51A00DCA3BA /* AppDelegate.swift */,
-				76EC388C235DD51A00DCA3BA /* ViewController.swift */,
+				76EC38B1235DE25C00DCA3BA /* Resources */,
+				76EC389C235DD5C200DCA3BA /* AppDelegate */,
+				76EC389E235DD5C200DCA3BA /* Controllers */,
 				76EC388E235DD51A00DCA3BA /* Main.storyboard */,
 				76EC3891235DD51C00DCA3BA /* Assets.xcassets */,
 				76EC3893235DD51C00DCA3BA /* LaunchScreen.storyboard */,
 				76EC3896235DD51C00DCA3BA /* Info.plist */,
 			);
 			path = SEMC;
+			sourceTree = "<group>";
+		};
+		76EC389C235DD5C200DCA3BA /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				76EC389D235DD5C200DCA3BA /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		76EC389E235DD5C200DCA3BA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				76EC38AC235DD6EB00DCA3BA /* SETTINGS */,
+				76EC38A9235DD6D900DCA3BA /* SAVINGS */,
+				76EC38A6235DD6B700DCA3BA /* OPTIMIZATION */,
+				76EC38A3235DD6A000DCA3BA /* DASHBOARD */,
+				76EC389F235DD5C200DCA3BA /* ViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		76EC389F235DD5C200DCA3BA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				76EC38AF235DE0D300DCA3BA /* BaseViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		76EC38A3235DD6A000DCA3BA /* DASHBOARD */ = {
+			isa = PBXGroup;
+			children = (
+				76EC38A4235DD6B300DCA3BA /* DashboardViewController.swift */,
+			);
+			path = DASHBOARD;
+			sourceTree = "<group>";
+		};
+		76EC38A6235DD6B700DCA3BA /* OPTIMIZATION */ = {
+			isa = PBXGroup;
+			children = (
+				76EC38A7235DD6D200DCA3BA /* OptimizationViewController.swift */,
+			);
+			path = OPTIMIZATION;
+			sourceTree = "<group>";
+		};
+		76EC38A9235DD6D900DCA3BA /* SAVINGS */ = {
+			isa = PBXGroup;
+			children = (
+				76EC38AA235DD6E700DCA3BA /* SavingsViewController.swift */,
+			);
+			path = SAVINGS;
+			sourceTree = "<group>";
+		};
+		76EC38AC235DD6EB00DCA3BA /* SETTINGS */ = {
+			isa = PBXGroup;
+			children = (
+				76EC38AD235DD6FA00DCA3BA /* SettingsViewController.swift */,
+			);
+			path = SETTINGS;
+			sourceTree = "<group>";
+		};
+		76EC38B1235DE25C00DCA3BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				76B45B9A236CC47300AA921E /* BadgeHub.swift */,
+				76EC393A235DF2EE00DCA3BA /* CustomViews */,
+				76EC38BD235DEC1700DCA3BA /* SFPro */,
+				76EC38BB235DE2B600DCA3BA /* Constants.swift */,
+				76EC38B5235DE26C00DCA3BA /* Navigation */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		76EC38B5235DE26C00DCA3BA /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				76EC38B6235DE26C00DCA3BA /* NavigationBar.swift */,
+				76EC38B7235DE26C00DCA3BA /* NavigationBar.xib */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		76EC38BD235DEC1700DCA3BA /* SFPro */ = {
+			isa = PBXGroup;
+			children = (
+				76EC38DD235DEC1700DCA3BA /* TrueType */,
+				76EC38FC235DEC1700DCA3BA /* SFPro_Font_License.rtf */,
+			);
+			path = SFPro;
+			sourceTree = "<group>";
+		};
+		76EC38DD235DEC1700DCA3BA /* TrueType */ = {
+			isa = PBXGroup;
+			children = (
+				76EC38DE235DEC1700DCA3BA /* SFProText-Medium.ttf */,
+				76EC38DF235DEC1700DCA3BA /* SFProText-Heavy.ttf */,
+				76EC38E0235DEC1700DCA3BA /* SFProDisplay-UltraLight.ttf */,
+				76EC38E1235DEC1700DCA3BA /* SFProDisplay-RegularItalic.ttf */,
+				76EC38E2235DEC1700DCA3BA /* SFProDisplay-SemiboldItalic.ttf */,
+				76EC38E3235DEC1700DCA3BA /* SFProText-RegularItalic.ttf */,
+				76EC38E4235DEC1700DCA3BA /* SFProText-SemiBold.ttf */,
+				76EC38E5235DEC1700DCA3BA /* SFProText-Regular.ttf */,
+				76EC38E6235DEC1700DCA3BA /* SFProDisplay-BoldItalic.ttf */,
+				76EC38E7235DEC1700DCA3BA /* SFProDisplay-Medium.ttf */,
+				76EC38E8235DEC1700DCA3BA /* SFProDisplay-Black.ttf */,
+				76EC38E9235DEC1700DCA3BA /* SFProText-BoldItalic.ttf */,
+				76EC38EA235DEC1700DCA3BA /* SFProText-MediumItalic.ttf */,
+				76EC38EB235DEC1700DCA3BA /* SFProText-LightItalic.ttf */,
+				76EC38EC235DEC1700DCA3BA /* SFProText-Light.ttf */,
+				76EC38ED235DEC1700DCA3BA /* SFProDisplay-ThinItalic.ttf */,
+				76EC38EE235DEC1700DCA3BA /* SFProText-HeavyItalic.ttf */,
+				76EC38EF235DEC1700DCA3BA /* SFProDisplay-Light.ttf */,
+				76EC38F0235DEC1700DCA3BA /* SFProDisplay-Regular.ttf */,
+				76EC38F1235DEC1700DCA3BA /* SFProDisplay-BlackItalic.ttf */,
+				76EC38F2235DEC1700DCA3BA /* SFProText-SemiBoldItalic.ttf */,
+				76EC38F3235DEC1700DCA3BA /* SFProDisplay-MediumItalic.ttf */,
+				76EC38F4235DEC1700DCA3BA /* SFProDisplay-Bold.ttf */,
+				76EC38F5235DEC1700DCA3BA /* SFProText-Bold.ttf */,
+				76EC38F6235DEC1700DCA3BA /* SFProDisplay-HeavyItalic.ttf */,
+				76EC38F7235DEC1700DCA3BA /* SFProDisplay-SemiBold.ttf */,
+				76EC38F8235DEC1700DCA3BA /* SFProDisplay-Heavy.ttf */,
+				76EC38F9235DEC1700DCA3BA /* SFProDisplay-LightItalic.ttf */,
+				76EC38FA235DEC1700DCA3BA /* SFProDisplay-UltralightItalic.ttf */,
+				76EC38FB235DEC1700DCA3BA /* SFProDisplay-Thin.ttf */,
+			);
+			path = TrueType;
+			sourceTree = "<group>";
+		};
+		76EC393A235DF2EE00DCA3BA /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				76EC393B235DF2FA00DCA3BA /* CollectionView */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		76EC393B235DF2FA00DCA3BA /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				76EC393C235DF30F00DCA3BA /* DashboardCollectionViewCell.swift */,
+				769F76E22370A92700DCDC33 /* GraphCollectionViewCell.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		BDB351F5EA5BE60A124F87C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75AF1D8FBBFE80E1DA8B8A67 /* Pods-SEMC.debug.xcconfig */,
+				B3AB6BF8C515928140D71B30 /* Pods-SEMC.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +322,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76EC3899235DD51C00DCA3BA /* Build configuration list for PBXNativeTarget "SEMC" */;
 			buildPhases = (
+				4E2FCF595C593CA58EC5FBE8 /* [CP] Check Pods Manifest.lock */,
 				76EC3883235DD51A00DCA3BA /* Sources */,
 				76EC3884235DD51A00DCA3BA /* Frameworks */,
 				76EC3885235DD51A00DCA3BA /* Resources */,
+				221CC1A02DBB08586C797852 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,21 +375,101 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76EC391D235DEC1800DCA3BA /* SFProDisplay-UltraLight.ttf in Resources */,
+				76EC3926235DEC1800DCA3BA /* SFProText-BoldItalic.ttf in Resources */,
 				76EC3895235DD51C00DCA3BA /* LaunchScreen.storyboard in Resources */,
+				76EC3934235DEC1800DCA3BA /* SFProDisplay-SemiBold.ttf in Resources */,
+				76EC3930235DEC1800DCA3BA /* SFProDisplay-MediumItalic.ttf in Resources */,
+				76EC391E235DEC1800DCA3BA /* SFProDisplay-RegularItalic.ttf in Resources */,
+				76EC391C235DEC1800DCA3BA /* SFProText-Heavy.ttf in Resources */,
+				76EC3931235DEC1800DCA3BA /* SFProDisplay-Bold.ttf in Resources */,
+				76EC3927235DEC1800DCA3BA /* SFProText-MediumItalic.ttf in Resources */,
+				76EC391F235DEC1800DCA3BA /* SFProDisplay-SemiboldItalic.ttf in Resources */,
+				76EC3929235DEC1800DCA3BA /* SFProText-Light.ttf in Resources */,
+				76EC3923235DEC1800DCA3BA /* SFProDisplay-BoldItalic.ttf in Resources */,
+				76EC3920235DEC1800DCA3BA /* SFProText-RegularItalic.ttf in Resources */,
+				76EC3921235DEC1800DCA3BA /* SFProText-SemiBold.ttf in Resources */,
+				76EC3939235DEC1800DCA3BA /* SFPro_Font_License.rtf in Resources */,
+				76EC392D235DEC1800DCA3BA /* SFProDisplay-Regular.ttf in Resources */,
+				76EC392F235DEC1800DCA3BA /* SFProText-SemiBoldItalic.ttf in Resources */,
 				76EC3892235DD51C00DCA3BA /* Assets.xcassets in Resources */,
+				76EC3935235DEC1800DCA3BA /* SFProDisplay-Heavy.ttf in Resources */,
+				76EC3936235DEC1800DCA3BA /* SFProDisplay-LightItalic.ttf in Resources */,
+				76EC392C235DEC1800DCA3BA /* SFProDisplay-Light.ttf in Resources */,
+				76EC3925235DEC1800DCA3BA /* SFProDisplay-Black.ttf in Resources */,
+				76EC392E235DEC1800DCA3BA /* SFProDisplay-BlackItalic.ttf in Resources */,
 				76EC3890235DD51A00DCA3BA /* Main.storyboard in Resources */,
+				76EC3937235DEC1800DCA3BA /* SFProDisplay-UltralightItalic.ttf in Resources */,
+				76EC392B235DEC1800DCA3BA /* SFProText-HeavyItalic.ttf in Resources */,
+				76EC3938235DEC1800DCA3BA /* SFProDisplay-Thin.ttf in Resources */,
+				76EC38BA235DE26C00DCA3BA /* NavigationBar.xib in Resources */,
+				76EC391B235DEC1800DCA3BA /* SFProText-Medium.ttf in Resources */,
+				76EC3933235DEC1800DCA3BA /* SFProDisplay-HeavyItalic.ttf in Resources */,
+				76EC3932235DEC1800DCA3BA /* SFProText-Bold.ttf in Resources */,
+				76EC3922235DEC1800DCA3BA /* SFProText-Regular.ttf in Resources */,
+				76EC3924235DEC1800DCA3BA /* SFProDisplay-Medium.ttf in Resources */,
+				76EC3928235DEC1800DCA3BA /* SFProText-LightItalic.ttf in Resources */,
+				76EC392A235DEC1800DCA3BA /* SFProDisplay-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		221CC1A02DBB08586C797852 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SEMC/Pods-SEMC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HMSegmentedControl/HMSegmentedControl.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HMSegmentedControl.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SEMC/Pods-SEMC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E2FCF595C593CA58EC5FBE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SEMC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		76EC3883235DD51A00DCA3BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76EC388D235DD51A00DCA3BA /* ViewController.swift in Sources */,
-				76EC388B235DD51A00DCA3BA /* AppDelegate.swift in Sources */,
+				76EC38AB235DD6E700DCA3BA /* SavingsViewController.swift in Sources */,
+				769F76E32370A92700DCDC33 /* GraphCollectionViewCell.swift in Sources */,
+				76EC38A5235DD6B300DCA3BA /* DashboardViewController.swift in Sources */,
+				76EC38A8235DD6D200DCA3BA /* OptimizationViewController.swift in Sources */,
+				76EC393D235DF30F00DCA3BA /* DashboardCollectionViewCell.swift in Sources */,
+				76EC38B9235DE26C00DCA3BA /* NavigationBar.swift in Sources */,
+				76EC38A1235DD5C300DCA3BA /* AppDelegate.swift in Sources */,
+				76EC38AE235DD6FA00DCA3BA /* SettingsViewController.swift in Sources */,
+				76EC38B0235DE0D300DCA3BA /* BaseViewController.swift in Sources */,
+				76EC38BC235DE2B700DCA3BA /* Constants.swift in Sources */,
+				76B45B9B236CC47300AA921E /* BadgeHub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +613,12 @@
 		};
 		76EC389A235DD51C00DCA3BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75AF1D8FBBFE80E1DA8B8A67 /* Pods-SEMC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SEMC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,16 +626,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.test.SEMC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		76EC389B235DD51C00DCA3BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3AB6BF8C515928140D71B30 /* Pods-SEMC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SEMC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +645,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.test.SEMC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

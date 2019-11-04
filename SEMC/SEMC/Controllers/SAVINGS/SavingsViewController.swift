@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SavingsViewController: UIViewController {
+class SavingsViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
